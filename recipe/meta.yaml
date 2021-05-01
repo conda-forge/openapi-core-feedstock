@@ -1,5 +1,5 @@
 {% set name = "openapi-core" %}
-{% set version = "0.13.7" %}
+{% set version = "0.13.8" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dc9b959e6d6444ac97414be7ee44006bd26a0ac4f633c57116785cfd6f7e27bf
+  sha256: 8dcd1ce197e6d534c4cb798c8c916758c751006506990ca3f9f42c7abb3514ed
 
 build:
   number: 0
