@@ -21,6 +21,7 @@ requirements:
   run:
     - attrs
     - isodate
+    - dictpath
     - lazy-object-proxy
     - more-itertools
     - openapi-schema-validator
