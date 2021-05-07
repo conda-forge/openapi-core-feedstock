@@ -1,5 +1,5 @@
 {% set name = "openapi-core" %}
-{% set version = "0.13.8" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8dcd1ce197e6d534c4cb798c8c916758c751006506990ca3f9f42c7abb3514ed
+  sha256: 8032f92a69d4fdf561320272ed1c8c92c8d3690918ba47ec95055f545c7a70da
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   run:
     - attrs
     - isodate
+    - dictpath
     - lazy-object-proxy
     - more-itertools
     - openapi-schema-validator
