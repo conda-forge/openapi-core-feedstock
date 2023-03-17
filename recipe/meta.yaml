@@ -40,8 +40,12 @@ test:
     - pip check
     - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
   requires:
+    - django
     - pip
+    - falcon
+    - flask
     - pytest-cov
+    - requests
 
 about:
   home: https://github.com/p1c2u/openapi-core
