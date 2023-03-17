@@ -11,8 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script:
-    - {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,13 +32,16 @@ requirements:
     - werkzeug
 
 test:
+  source_files:
+    - tests
   imports:
     - openapi_core
-    - openapi_core.casting
   commands:
     - pip check
+    - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
   requires:
     - pip
+    - pytest-cov
 
 about:
   home: https://github.com/p1c2u/openapi-core
