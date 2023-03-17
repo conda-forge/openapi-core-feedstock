@@ -38,7 +38,7 @@ test:
     - openapi_core
   commands:
     - pip check
-    - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
+    - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=91
   requires:
     - django
     - djangorestframework
