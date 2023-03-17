@@ -41,6 +41,7 @@ test:
     - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
   requires:
     - django
+    - djangorestframework
     - httpx
     - falcon
     - flask
@@ -49,6 +50,7 @@ test:
     - requests
     - responses
     - starlette
+    - webob
 
 about:
   home: https://github.com/p1c2u/openapi-core
