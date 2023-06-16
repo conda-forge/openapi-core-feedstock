@@ -1,4 +1,4 @@
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: openapi-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openapi-core/openapi_core-{{ version }}.tar.gz
-  sha256: 561b7e2b37b336e9c62d4634b9059d12d9bb2e1859062a39d3a0fa6afc8c9de6
+  sha256: 8a1f68398383b222a769f967b15161fcbd408740f44cb48a346936aa27f1ce63
 
 build:
   number: 0
@@ -19,16 +19,18 @@ requirements:
     - python >=3.7
     - poetry-core >=1.0.0
   run:
-    - python >=3.7
+    - asgiref >=3.6.0,<4.0.0
     - backports.cached-property >=1.0.2,<2.0.0
     - isodate
-    - jsonschema-spec >=0.1.1,<0.2.0
+    - jsonschema >=4.17.3,<5.0.0
+    - jsonschema-spec >=0.1.6,<0.2.0
+    - lazy-object-proxy >=1.7.1,<2.0.0
     - more-itertools
-    - openapi-schema-validator >=0.4.2,<0.5
+    - openapi-schema-validator >=0.4.2,<0.5.0
     - openapi-spec-validator >=0.5.0,<0.6.0
     - parse
-    - pathable >=0.4.0,<0.5.0
-    - typing-extensions >=4.3.0,<5.0.0
+    - python >=3.7
+    - typing_extensions >=4.5.0,<5.0.0
     - werkzeug
 
 test:
@@ -40,12 +42,14 @@ test:
     - pip check
     - pytest -vv --cov=openapi_core --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=91
   requires:
+    - aiohttp
     - django
     - djangorestframework
     - httpx
     - falcon
     - flask
     - pip
+    - pytest-aiohttp
     - pytest-cov
     - requests
     - responses
