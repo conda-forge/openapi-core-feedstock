@@ -49,6 +49,7 @@ test:
     - falcon
     - flask
     - pip
+    - pytest-aiohttp
     - pytest-cov
     - requests
     - responses
