@@ -1,4 +1,4 @@
-{% set version = "0.17.2" %}
+{% set version = "0.18.0" %}
 
 package:
   name: openapi-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openapi-core/openapi_core-{{ version }}.tar.gz
-  sha256: 8a1f68398383b222a769f967b15161fcbd408740f44cb48a346936aa27f1ce63
+  sha256: ede9fe3a2b0a7f8870249c085b2d7e64b7bb169b46ceeaa3b812cceff2b05548
 
 build:
   number: 0
@@ -16,21 +16,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - poetry-core >=1.0.0
   run:
     - asgiref >=3.6.0,<4.0.0
-    - backports.cached-property >=1.0.2,<2.0.0
     - isodate
-    - jsonschema >=4.17.3,<5.0.0
-    - jsonschema-spec >=0.1.6,<0.2.0
-    - lazy-object-proxy >=1.7.1,<2.0.0
+    - jsonschema >=4.18.0,<5.0.0
+    - jsonschema-spec >=0.2.3,<0.3.0
     - more-itertools
-    - openapi-schema-validator >=0.4.2,<0.5.0
-    - openapi-spec-validator >=0.5.0,<0.6.0
+    - openapi-schema-validator >=0.6.0,<0.7.0
+    - openapi-spec-validator >=0.6.0,<0.7.0
     - parse
-    - python >=3.7
-    - typing_extensions >=4.5.0,<5.0.0
+    - python >=3.8
     - werkzeug
 
 test:
