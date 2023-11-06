@@ -25,7 +25,7 @@ requirements:
     - jsonschema-spec >=0.2.3,<0.3.0
     - more-itertools
     - openapi-schema-validator >=0.6.0,<0.7.0
-    - openapi-spec-validator >=0.6.0,<0.7.0
+    - openapi-spec-validator >=0.7.1,<0.8.0
     - parse
     - python >=3.8
     - werkzeug
