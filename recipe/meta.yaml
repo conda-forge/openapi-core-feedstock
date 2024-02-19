@@ -43,6 +43,7 @@ test:
     - djangorestframework
     - httpx
     - falcon
+    - fastapi
     - flask
     - pip
     - pytest-aiohttp
