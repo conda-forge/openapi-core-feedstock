@@ -1,4 +1,4 @@
-{% set version = "0.19.0" %}
+{% set version = "0.19.1" %}
 
 # added on https://github.com/conda-forge/openapi-core-feedstock/pull/22
 {% set skips = [
@@ -17,7 +17,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openapi-core/openapi_core-{{ version }}.tar.gz
-  sha256: 9c0a157ca8e21a1205f95e0495557a45ad2a33bc8f0f9002406d671420b0920a
+  sha256: 3facc2c87b7e9fb9909ae72bfb0b7cad20954e23fb4ef04dc5559197dee87597
 
 build:
   number: 0
