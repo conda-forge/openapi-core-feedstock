@@ -16,7 +16,7 @@ SKIPS = [
 
 COV = ["coverage"]
 K = [f"""not ({" or ".join(SKIPS)})"""]
-PYTEST = ["pytest", "-vv", "--tb=long", "--color=yes", "-k", *K]
+PYTEST = ["pytest", "-vv", "--tb=long", "--color=yes", "--asyncio-mode=auto", "-k", *K]
 RUN = ["run", "--source", "openapi_core", "--branch", "-m", *PYTEST]
 REPORT = ["report", "--show-missing", "--skip-covered", f"--fail-under={FAIL_UNDER}"]
 
