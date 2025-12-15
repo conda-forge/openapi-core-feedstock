@@ -44,8 +44,6 @@ tests:
         - ${{ python_check_max }}.*
       imports: openapi_core
   - files:
-      recipe:
-        - run_test.py
       source:
         - tests/
     requirements:
@@ -73,7 +71,9 @@ about:
   summary: client-side and server-side support for the OpenAPI Specification v3
   license: BSD-3-Clause
   license_file: LICENSE
-  homepage: https://github.com/p1c2u/openapi-core
+  homepage: https://pypi.org/project/openapi-core
+  repository: https://github.com/python-openapi/openapi-core
+  documentation: https://openapi-core.readthedocs.io
 
 extra:
   recipe-maintainers:
