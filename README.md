@@ -3,11 +3,15 @@ About openapi-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openapi-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/p1c2u/openapi-core
+Home: https://pypi.org/project/openapi-core
 
 Package license: BSD-3-Clause
 
 Summary: client-side and server-side support for the OpenAPI Specification v3
+
+Development: https://github.com/python-openapi/openapi-core
+
+Documentation: https://openapi-core.readthedocs.io/
 
 Current build status
 ====================
