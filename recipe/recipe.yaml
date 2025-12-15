@@ -3,6 +3,7 @@ schema_version: 1
 
 context:
   version: "0.20.0"
+  python_check_max: "3.14"
 
 package:
   name: openapi-core
@@ -40,7 +41,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
       imports: openapi_core
   - files:
       recipe:
@@ -66,7 +67,7 @@ tests:
         - starlette
         - webob
     script:
-      - python run_test.py
+      file: run_test.py
 
 about:
   summary: client-side and server-side support for the OpenAPI Specification v3
