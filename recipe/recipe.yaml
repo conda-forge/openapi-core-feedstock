@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 0.19.5
+  version: "0.20.0"
 
 package:
   name: openapi-core
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openapi-core/openapi_core-${{ version }}.tar.gz
-  sha256: 421e753da56c391704454e66afe4803a290108590ac8fa6f4a4487f4ec11f2d3
+  sha256: 3de7fcc635139875da0e2102b7de96f1b42738365a2f99d7eef6e835839cc649
 
 build:
   number: 0
