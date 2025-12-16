@@ -31,7 +31,6 @@ requirements:
     - more-itertools
     - openapi-schema-validator >=0.6.0,<0.7.0
     - openapi-spec-validator >=0.7.1,<0.8.0
-    - parse
     - python >=${{ python_min }}
     - typing_extensions >=4.8.0,<5.0.0
     - werkzeug >=2.1.0
