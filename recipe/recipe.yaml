@@ -27,10 +27,10 @@ requirements:
   run:
     - isodate
     - jsonschema >=4.23.0,<5.0.0
-    - jsonschema-path >=0.3.4,<0.4.0
+    - jsonschema-path >=0.4.5,<0.5.0
     - more-itertools
-    - openapi-schema-validator >=0.6.0,<0.7.0
-    - openapi-spec-validator >=0.7.1,<0.8.0
+    - openapi-schema-validator >=0.7.0,<0.9.0
+    - openapi-spec-validator >=0.8.0,<0.9.0
     - python >=${{ python_min }}
     - typing_extensions >=4.8.0,<5.0.0
     - werkzeug >=2.1.0
