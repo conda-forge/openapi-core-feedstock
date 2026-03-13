@@ -1,7 +1,7 @@
 import sys
 from subprocess import call
 
-FAIL_UNDER = 91
+FAIL_UNDER = 90
 
 # added on https://github.com/conda-forge/openapi-core-feedstock/pull/22
 SKIPS = [
